@@ -79,6 +79,7 @@ try{
                         viewport={{ once: true }}
                         className="uppercase p-2 text-2xl sm:text-4xl font-serif bg-clip-text text-transparent bg-gradient-to-r from-black to-black uppercase"
                     >
+                      Той иелері: қызы мен ұлдары <br />
                         Есіміңізді жазуыңызды өтінеміз
                     </motion.h2>
             <input

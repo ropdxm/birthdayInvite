@@ -37,7 +37,7 @@ export default function Location() {
                         viewport={{ once: true }}
                         className="my-8 p-2 text-2xl sm:text-4xl font-serif bg-clip-text text-transparent bg-gradient-to-r from-black to-black uppercase"
                     >
-                        {`Түркістан қаласы, 160-ші орам, 417/1\n "Нұр Аспан"\n тойханасы`}
+                        Түркістан қаласы, 160-ші орам, 417/1 <br /> "Нұр Аспан" тойханасы
                     </motion.h2>
 
                     {/* Decorative Divider */}

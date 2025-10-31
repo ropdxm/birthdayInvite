@@ -58,7 +58,7 @@ className="mt-8 font-fancy  text-4xl sm:text-6xl bg-clip-text text-transparent b
                             animate={{ opacity: 1 }}
                             transition={{ delay: 0.4 }}
 className="mb-4 px-2 text-3xl sm:text-5xl font-serif bg-clip-text text-transparent bg-gradient-to-r from-black to-black "
->                            {`25 Қараша 2025 жыл\nсағат 18:00`} 
+>                            28 Қараша 2025 жыл <br /> сағат 18:00
                         </motion.h2>
 <div className="bg-transparent mt-3 py-4 px-8 w-full  rounded-lg">
   {/* Month Header */}

@@ -134,7 +134,7 @@ const [timeLeft, setTimeLeft] = useState({
       className="w-full h-60 object-cover"
     />
 <div className="absolute bottom-0 left-0 right-0 bg-[#055d64]/70 backdrop-blur-sm py-2">
-  <div className="text-white text-center text-3xl font-fancy tracking-wider">25</div>
+  <div className="text-white text-center text-3xl font-fancy tracking-wider">2025</div>
 </div>  </div>
 </div>
                 <motion.div
