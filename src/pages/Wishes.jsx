@@ -53,6 +53,7 @@ try{
         console.error(error)
     }finally{
         setLoading(false)
+        alert("Сіздің жауабыңыз сақталды")
     }
 
   };
