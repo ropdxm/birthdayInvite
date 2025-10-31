@@ -1,1 +1,1 @@
-Ts is a readme yo
+The website is primarily designed for mobile phones and most likely will work really bad w desktops.
