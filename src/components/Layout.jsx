@@ -91,7 +91,7 @@ const Layout = ({ children }) => {
         {/* Music Control Button with Status Indicator */}
 
 
-        <main className="relative h-full w-full pb-[100px]">
+        <main className="relative h-full w-full">
           {children}
         </main>
         {/* <BottomBar /> */}

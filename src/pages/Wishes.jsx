@@ -79,7 +79,7 @@ try{
                         viewport={{ once: true }}
                         className="uppercase p-2 text-2xl sm:text-4xl font-serif bg-clip-text text-transparent bg-gradient-to-r from-black to-black uppercase"
                     >
-                      Той иелері: қызы мен ұлдары <br />
+                      <div className='font-fancy text-center text-[#055d64]'>Той иелері: қызы мен ұлдары</div> <br />
                         Есіміңізді жазуыңызды өтінеміз
                     </motion.h2>
             <input
@@ -137,7 +137,7 @@ try{
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ delay: 0.4 }}
-className="px-4 my-8 font-fancy p-2 text-4xl text-center sm:text-6xl leading-10 bg-clip-text text-transparent bg-gradient-to-r from-[#055d64] to-[#055d64] uppercase"
+className="px-4 my-8 font-fancy text-4xl text-center sm:text-6xl leading-10 bg-clip-text text-transparent bg-gradient-to-r from-[#055d64] to-[#055d64] uppercase"
 >                            {`Келіңіздер,\nтойымыздың қадірлі\nқонағы болыңыздар!`}
                         </motion.h2>
         </section>
