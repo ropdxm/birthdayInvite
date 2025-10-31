@@ -78,7 +78,7 @@ export default function Location() {
 
                                         <div className="pt-4">
                                     <motion.a
-                                        href={config.data.maps_url}
+                                        href="https://go.2gis.com/FrV91"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         whileHover={{ scale: 1.02 }}
