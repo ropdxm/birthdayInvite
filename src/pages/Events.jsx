@@ -50,14 +50,14 @@ export default function Events() {
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ delay: 0.4 }}
-className="mt-8 font-cursive italic  text-3xl sm:text-5xl font-serif bg-clip-text text-transparent bg-gradient-to-r from-[#055d64] to-[#055d64] "
+className="mt-8 font-fancy  text-4xl sm:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-[#055d64] to-[#055d64] "
 >                            Той салтанаты:
                         </motion.h2>
                         <motion.h2
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ delay: 0.4 }}
-className="font-cursive italic px-2 text-3xl sm:text-5xl font-serif bg-clip-text text-transparent bg-gradient-to-r from-[#055d64] to-[#055d64] "
+className="mb-4 px-2 text-3xl sm:text-5xl font-serif bg-clip-text text-transparent bg-gradient-to-r from-black to-black "
 >                            {`25 Қараша 2025 жыл\nсағат 18:00`} 
                         </motion.h2>
 <div className="bg-transparent mt-3 py-4 px-8 w-full  rounded-lg">
@@ -100,7 +100,7 @@ className="font-cursive italic px-2 text-3xl sm:text-5xl font-serif bg-clip-text
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ delay: 0.4 }}
-className="mt-5 mb-2 font-cursive italic p-2 text-3xl sm:text-5xl font-serif bg-clip-text text-transparent bg-gradient-to-r from-[#055d64] to-[#055d64] "
+className="mt-5 mb-2 font-fancy p-2 text-4xl sm:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-[#055d64] to-[#055d64] "
 >                            Тойға дейін:
                         </motion.h2>
 

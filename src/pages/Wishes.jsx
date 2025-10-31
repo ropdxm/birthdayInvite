@@ -34,7 +34,7 @@ export const db = getFirestore(app);
 
 export default function Wishes() {
     
-      const [name, setName] = useState('');
+  const [name, setName] = useState('');
   const [attendance, setAttendance] = useState('');
   const [loading, setLoading] = useState(false);
 
@@ -103,7 +103,7 @@ try{
                   onChange={(e) => setAttendance(e.target.value)}
                   className="h-5 w-5 text-[#055d64] focus:ring-[#055d64] border-[#055d64]"
                 />
-                <span className="ml-3 text-black font-medium uppercase">Әрине, келемін</span>
+                <span className="ml-3 text-black uppercase">Әрине, келемін</span>
               </label>
               
               <label className="flex items-center pl-3 rounded-lg">
@@ -115,7 +115,7 @@ try{
                   onChange={(e) => setAttendance(e.target.value)}
                   className="h-5 w-5 text-[#055d64] focus:ring-[#055d64] border-[#055d64]"
                 />
-                <span className="ml-3 text-black font-medium uppercase">Өкінішке орай, келе алмаймын</span>
+                <span className="ml-3 text-black uppercase">Өкінішке орай, келе алмаймын</span>
               </label>
             </div>
           </div>
@@ -136,7 +136,7 @@ try{
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ delay: 0.4 }}
-className="px-4 my-8 font-cursive italic p-2 text-3xl text-center sm:text-5xl leading-10 font-serif bg-clip-text text-transparent bg-gradient-to-r from-[#055d64] to-[#055d64] uppercase"
+className="px-4 my-8 font-fancy p-2 text-4xl text-center sm:text-6xl leading-10 bg-clip-text text-transparent bg-gradient-to-r from-[#055d64] to-[#055d64] uppercase"
 >                            {`Келіңіздер,\nтойымыздың қадірлі\nқонағы болыңыздар!`}
                         </motion.h2>
         </section>

@@ -150,7 +150,7 @@ const [timeLeft, setTimeLeft] = useState({
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ delay: 0.4 }}
-className="my-8 font-cursive italic p-2 text-3xl sm:text-5xl font-serif bg-clip-text text-transparent bg-gradient-to-r from-[#055d64] to-[#055d64] uppercase"
+className="my-8  italic p-2 text-3xl sm:text-5xl font-serif bg-clip-text text-transparent bg-gradient-to-r from-[#055d64] to-[#055d64] uppercase"
 >                            Құрметті ағайын-туыс, бауырлар, нағашы-жиен, бөлелер, құда жекжат, дос-жарандар, әріптестер мен көршілер!
                         </motion.h2>
                         <motion.h2
