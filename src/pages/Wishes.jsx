@@ -55,7 +55,7 @@ const audioRef = useRef(null);
         
         // Alternative: Create new audio context (sometimes works better)
         try {
-          const AudioContext = window.AudioContext || window.webkitAudioContext;
+          const AudioContext = window.AudioContext || window?.webkitAudioContext;
           const audioContext = new AudioContext();
           const source = audioContext.createBufferSource();
           // You would need to decode and play your audio buffer here
@@ -197,12 +197,6 @@ try{
                     >
                             {`Келіңіздер,\nтойымыздың қадірлі\nқонағы болыңыздар!`}
                         </motion.div>
-      <audio
-      ref={audioRef}
-        loop
-        preload="auto"
-        src={alem}
-      />
         </section>
     </>)
 }
