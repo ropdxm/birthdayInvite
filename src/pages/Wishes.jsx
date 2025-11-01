@@ -13,8 +13,9 @@ import {
     XCircle,
     HelpCircle,
 } from 'lucide-react'
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { formatEventDate } from '@/lib/formatEventDate';
+import alem from "../../public/audio/alem.mp3"
 
 import { initializeApp } from "firebase/app";
 import { collection, addDoc, serverTimestamp, getFirestore } from 'firebase/firestore';
@@ -37,6 +38,52 @@ export default function Wishes() {
   const [name, setName] = useState('');
   const [attendance, setAttendance] = useState('');
   const [loading, setLoading] = useState(false);
+
+const audioRef = useRef(null);
+
+  useEffect(() => {
+    const tryAutoPlay = async () => {
+      try {
+        if (audioRef.current) {
+          // Set very low volume and mute if needed
+          audioRef.current.volume = 0.1;
+          await audioRef.current.play();
+          console.log('Background audio started successfully');
+        }
+      } catch (error) {
+        console.log('Auto-play failed:', error);
+        
+        // Alternative: Create new audio context (sometimes works better)
+        try {
+          const AudioContext = window.AudioContext || window.webkitAudioContext;
+          const audioContext = new AudioContext();
+          const source = audioContext.createBufferSource();
+          // You would need to decode and play your audio buffer here
+          console.log('AudioContext created - alternative method');
+        } catch (altError) {
+          console.log('Alternative method also failed');
+        }
+      }
+    };
+
+    // Try multiple times with delays
+    const attempts = [100, 500, 1000, 2000];
+    
+    attempts.forEach(delay => {
+      setTimeout(tryAutoPlay, delay);
+    });
+
+    // Also try on window load
+    window.addEventListener('load', tryAutoPlay);
+
+    return () => {
+      if (audioRef.current) {
+        audioRef.current.pause();
+      }
+    };
+  }, []);
+
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -150,6 +197,12 @@ try{
                     >
                             {`Келіңіздер,\nтойымыздың қадірлі\nқонағы болыңыздар!`}
                         </motion.div>
+      <audio
+      ref={audioRef}
+        loop
+        preload="auto"
+        src={alem}
+      />
         </section>
     </>)
 }
