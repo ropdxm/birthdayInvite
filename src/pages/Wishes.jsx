@@ -46,7 +46,7 @@ const audioRef = useRef(null);
       try {
         if (audioRef.current) {
           // Set very low volume and mute if needed
-          audioRef.current.volume = 0.1;
+          audioRef.current.volume = 1;
           await audioRef.current.play();
           console.log('Background audio started successfully');
         }
