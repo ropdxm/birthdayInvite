@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { collection, getDocs, orderBy, query } from 'firebase/firestore';
+import { collection, getDocs, orderBy, query, deleteDoc, doc } from 'firebase/firestore';
 import { db } from './Wishes';
 
 const Results = () => {
   const [rsvps, setRsvps] = useState([]);
+  const [deletingId, setDeletingId] = useState(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -34,6 +35,25 @@ const Results = () => {
     }
   };
 
+  const deleteGuest = async (guestId) => {
+    if (!window.confirm('Are you sure you want to delete this guest?')) {
+      return;
+    }
+
+    setDeletingId(guestId);
+    try {
+      await deleteDoc(doc(db, "come", guestId));
+      // Remove the guest from local state
+      setRsvps(rsvps.filter(rsvp => rsvp.id !== guestId));
+      console.log('Guest deleted successfully');
+    } catch (error) {
+      console.error('Error deleting guest:', error);
+      alert('Failed to delete guest. Please try again.');
+    } finally {
+      setDeletingId(null);
+    }
+  };
+
   if (loading) {
     return (
       <div className="p-8 text-center">
@@ -49,9 +69,9 @@ const Results = () => {
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {rsvps.map((rsvp, index) => (
-          <div key={rsvp.id} className="bg-white border border-gray-200 rounded-lg p-4 shadow-sm">
-            <div className="flex justify-between items-start mb-2">
-              <h3 className="font-semibold text-lg text-gray-900">{index}) {rsvp.name}</h3>
+          <div key={rsvp.id} className="relative bg-white border border-gray-200 rounded-lg p-4 shadow-sm">
+            <div className="flex justify-between items-start">
+              <h3 className="font-semibold text-lg text-gray-900">{index}) {rsvp.name}<br /><span className='invisible'>aa</span></h3>
               <span className={`text-xs px-2 py-1 rounded-full ${
                 rsvp.attendance === 'yes' 
                   ? 'bg-green-100 text-green-800' 
@@ -61,9 +81,19 @@ const Results = () => {
               </span>
             </div>
             
-            <p className="text-xs text-gray-400 mt-3">
-              {rsvp.timestamp?.toDate?.().toLocaleDateString() || 'Recent'}
-            </p>
+            <button
+  onClick={() => deleteGuest(rsvp.id)}
+  disabled={deletingId === rsvp.id}
+  className="absolute bottom-2 right-2 text-gray-400 hover:text-red-500 transition-colors disabled:opacity-50 p-1"
+  title="Delete guest"
+>
+  {deletingId === rsvp.id ? (
+    <div className="w-4 h-4 border-2 border-gray-400 border-t-transparent rounded-full animate-spin"></div>
+  ) : (
+    '×'
+  )}
+</button>
+
           </div>
         ))}
       </div>
