@@ -4,7 +4,7 @@ import { Heart } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react';
 import config from '@/config/config';
-import photo1 from "../../public/images/photo1.jpeg"
+import photo1 from "../../public/images/photoEvents.jpeg"
 
 import heartIcon from "../../public/images/heart.png"
 

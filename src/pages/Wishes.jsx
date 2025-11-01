@@ -72,6 +72,15 @@ try{
         <form onSubmit={handleSubmit} className="space-y-2">
           {/* Name Input */}
           <div>
+<motion.span
+                        initial={{ opacity: 0, y: 10 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.2 }}
+                        viewport={{ once: true }}
+                        className="mb-4 font-fancy p-2 text-4xl sm:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-[#055d64] to-[#055d64]"
+                    >
+                        Той иелері: қызы мен ұлдары!
+                    </motion.span>
             <motion.h2
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -79,7 +88,6 @@ try{
                         viewport={{ once: true }}
                         className="uppercase p-2 text-2xl sm:text-4xl font-serif bg-clip-text text-transparent bg-gradient-to-r from-black to-black uppercase"
                     >
-                      <div className='font-fancy text-center text-[#055d64]'>Той иелері: қызы мен ұлдары</div> <br />
                         Есіміңізді жазуыңызды өтінеміз
                     </motion.h2>
             <input
@@ -133,13 +141,15 @@ try{
 
                 </motion.div>
 
-            <motion.h2
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ delay: 0.4 }}
-className="px-4 mt-8 font-fancy text-4xl text-center sm:text-6xl leading-10 bg-clip-text text-transparent bg-gradient-to-r from-[#055d64] to-[#055d64] uppercase"
->                            {`Келіңіздер,\nтойымыздың қадірлі\nқонағы болыңыздар!`}
-                        </motion.h2>
+<motion.div
+                        initial={{ opacity: 0, y: 10 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.2 }}
+                        viewport={{ once: true }}
+                        className="mt-6 font-fancy p-4 text-center text-5xl sm:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-[#055d64] to-[#055d64]"
+                    >
+                            {`Келіңіздер,\nтойымыздың қадірлі\nқонағы болыңыздар!`}
+                        </motion.div>
         </section>
     </>)
 }

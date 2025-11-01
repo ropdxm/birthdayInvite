@@ -101,41 +101,19 @@ const [timeLeft, setTimeLeft] = useState({
     return (
         <>
             <section id="home" className="min-h-screen flex flex-col items-center justify-center   sm:py-20 text-center relative overflow-hidden">
-                                    <div className="flex items-stretch bg-white rounded-lg shadow-lg overflow-hidden">
+                                    <div className="flex w-full bg-white rounded-lg shadow-lg overflow-hidden">
   <div className="flex-1 relative group">
     <img 
-      src={heroright} 
+      src={photo1} 
       alt="Description 1" 
-      className="w-full h-60 object-cover"
+      className="w-full h-70 object-cover"
     />
 <div className="absolute bottom-0 left-0 right-0 bg-[#055d64]/70 backdrop-blur-sm py-2">
-  <div className="text-white text-center text-3xl font-fancy tracking-wider">28</div>
+  <div className="text-white text-center text-3xl font-fancy tracking-wider">28.11.2025</div>
 </div>
   </div>
   
-  <div className="w-px bg-white" />
-  
-  <div className="flex-1 relative group">
-    <img 
-      src={heromiddle} 
-      alt="Description 2" 
-      className="w-full h-60 object-cover"
-    />
-<div className="absolute bottom-0 left-0 right-0 bg-[#055d64]/70 backdrop-blur-sm py-2">
-  <div className="text-white text-center text-3xl font-fancy tracking-wider">11</div>
-</div>  </div>
-  
-  <div className="w-px bg-white" />
-  
-  <div className="flex-1 relative group">
-    <img 
-      src={heroleft} 
-      alt="Description 3" 
-      className="w-full h-60 object-cover"
-    />
-<div className="absolute bottom-0 left-0 right-0 bg-[#055d64]/70 backdrop-blur-sm py-2">
-  <div className="text-white text-center text-3xl font-fancy tracking-wider">2025</div>
-</div>  </div>
+
 </div>
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -159,7 +137,7 @@ className="my-8  italic p-2 text-3xl sm:text-5xl font-serif bg-clip-text text-tr
                             transition={{ delay: 0.6 }}
                             className="p-2 text-2xl sm:text-5xl font-serif bg-clip-text bg-gradient-to-r from-white to-white"
                         >
-                            Сіздерді атамыз <span className='text-4xl font-fancy text-[#055d64]'> Бұзаубай </span>70 жас мерейтойына және анамыз <span className='text-4xl font-fancy text-[#055d64]'>Нағима</span> екеуінің отандасқанына 50 жыл болуына арналған салтанатты ақ дастарқанымыздың қадірлі қонағы болуға шақырамыз!
+                            Сіздерді атамыз <span className='text-4xl  text-[#055d64]'> Бұзаубай </span>70 жас мерейтойына және анамыз <span className='text-4xl  text-[#055d64]'>Нағима</span> екеуінің отандасқанына 50 жыл болуына арналған салтанатты кешіміздің қадірлі қонағы болуға шақырамыз!
                         </motion.h2>
                     </div>
 
