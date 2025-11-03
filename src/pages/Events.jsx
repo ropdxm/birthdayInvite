@@ -57,15 +57,11 @@ className="mt-8 font-fancy  text-4xl sm:text-6xl bg-clip-text text-transparent b
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ delay: 0.4 }}
-className="mb-4 px-2 text-3xl sm:text-5xl font-serif bg-clip-text text-transparent bg-gradient-to-r from-black to-black "
+className="uppercase mt-4 px-2 text-2xl sm:text-5xl font-light bg-clip-text text-transparent bg-gradient-to-r from-black to-black "
 >                            28 Қараша 2025 жыл <br /> сағат 18:00
                         </motion.h2>
 <div className="bg-transparent mt-3 py-4 px-8 w-full  rounded-lg">
-  {/* Month Header */}
-  <div className="text-center mb-2">
-    <h2 className="text-2xl font-bold text-gray-800">Қараша 2025</h2>
-  </div>
-  
+
   {/* Week Days Header */}
   <div className="grid grid-cols-7 gap-2 mb-2">
     {['ДС', 'СС', 'СР', 'БС', 'ЖМ', 'СБ', 'ЖБ'].map((day) => (

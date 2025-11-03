@@ -119,21 +119,21 @@ try{
         <form onSubmit={handleSubmit} className="space-y-2">
           {/* Name Input */}
           <div>
-<motion.span
+<motion.h2
                         initial={{ opacity: 0, y: 10 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.2 }}
                         viewport={{ once: true }}
-                        className="mb-4 font-fancy p-2 text-4xl sm:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-[#055d64] to-[#055d64]"
+                        className=" text-center font-fancy p-2 text-4xl sm:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-[#055d64] to-[#055d64]"
                     >
-                        Той иелері: қызы мен ұлдары!
-                    </motion.span>
+                        Той иелері: қызы, ұлдары, және немерелері!
+                    </motion.h2>
             <motion.h2
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.3 }}
                         viewport={{ once: true }}
-                        className="uppercase p-2 text-2xl sm:text-4xl font-serif bg-clip-text text-transparent bg-gradient-to-r from-black to-black uppercase"
+                        className="uppercase p-2 text-[1.2rem] sm:text-4xl font-serif bg-clip-text text-transparent bg-gradient-to-r from-black to-black uppercase"
                     >
                         Есіміңізді жазуыңызды өтінеміз
                     </motion.h2>
@@ -159,7 +159,7 @@ try{
                   onChange={(e) => setAttendance(e.target.value)}
                   className="h-5 w-5 text-[#055d64] focus:ring-[#055d64] border-[#055d64]"
                 />
-                <span className="ml-3 text-black uppercase">Әрине, келемін</span>
+                <h2 className="p-2 text-[1.1rem] sm:text-4xl font-serif bg-clip-text text-transparent bg-gradient-to-r from-black to-black uppercase">Әрине, келемін</h2>
               </label>
               
               <label className="flex items-center pl-3 rounded-lg">
@@ -171,7 +171,7 @@ try{
                   onChange={(e) => setAttendance(e.target.value)}
                   className="h-5 w-5 text-[#055d64] focus:ring-[#055d64] border-[#055d64]"
                 />
-                <span className="ml-3 text-black uppercase">Өкінішке орай, келе алмаймын</span>
+                <h2 className="p-2 text-[1.1rem] sm:text-4xl font-serif bg-clip-text text-transparent bg-gradient-to-r from-black to-black uppercase">Өкінішке орай, келе алмаймын</h2>
               </label>
             </div>
           </div>
@@ -193,9 +193,9 @@ try{
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.2 }}
                         viewport={{ once: true }}
-                        className="mt-6 font-fancy p-4 text-center text-5xl sm:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-[#055d64] to-[#055d64]"
+                        className="mt-6 font-fancy p-4 px-6 text-center text-[2.5rem] sm:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-[#055d64] to-[#055d64]"
                     >
-                            {`Келіңіздер,\nтойымыздың қадірлі\nқонағы болыңыздар!`}
+                            Келіңіздер, <br/> тойымыздың қадірлі <br/> қонағы болыңыздар!
                         </motion.div>
         </section>
     </>)

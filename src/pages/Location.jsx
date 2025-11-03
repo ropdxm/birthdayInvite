@@ -35,9 +35,9 @@ export default function Location() {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.3 }}
                         viewport={{ once: true }}
-                        className="my-8 p-2 text-2xl sm:text-4xl font-serif bg-clip-text text-transparent bg-gradient-to-r from-black to-black uppercase"
+                        className="my-8 px-5 text-[1.2rem] sm:text-4xl font-serif bg-clip-text text-transparent bg-gradient-to-r from-black to-black uppercase"
                     >
-                        Түркістан қаласы, 160-ші орам, 417/1 <br /> "Нұр Аспан" тойханасы
+                        Түркістан қаласы,<br/> 160-ші орам, 417/1 <br /> "Нұр Аспан" тойханасы
                     </motion.h2>
 
                     {/* Decorative Divider */}
