@@ -131,13 +131,7 @@ const [timeLeft, setTimeLeft] = useState({
 className="my-8 px-8 text-[1.2rem] sm:text-5xl font-serif bg-clip-text text-transparent bg-gradient-to-r from-[#86795f] to-[#86795f] uppercase">
     Құрметті <br/> ағайын-туыс, бауырлар, нағашы-жиен, бөлелер, құда жекжат,<br/> дос-жарандар, әріптестер мен көршілер!
                         </motion.h2> */}
-                                                <motion.h2
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ delay: 0.4 }}
-className="my-8 px-8 text-[1.2rem] sm:text-5xl font-serif bg-clip-text text-transparent bg-gradient-to-r from-[#86795f] to-[#86795f] uppercase">
-    Құрметті <br/> <br/> <br/> <br/>
-                        </motion.h2>
+
 
                         <motion.h2
                             initial={{ scale: 0.8, opacity: 0 }}
