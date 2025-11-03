@@ -149,7 +149,7 @@ try{
 
           {/* Radio Buttons */}
           <div>
-            <div className="space-y-3">
+            <div className="my-5">
               <label className="flex items-center pl-3 rounded-lg">
                 <input
                   type="radio"
