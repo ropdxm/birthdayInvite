@@ -137,7 +137,7 @@ className="my-8 px-8 text-[1.2rem] sm:text-5xl font-serif bg-clip-text text-tran
                             initial={{ scale: 0.8, opacity: 0 }}
                             animate={{ scale: 1, opacity: 1 }}
                             transition={{ delay: 0.6 }}
-                            className="p-2 px-4 text-[1.2rem] sm:text-5xl font-serif bg-clip-text bg-gradient-to-r from-white to-white"
+                            className="p-2 mt-5 px-4 text-[1.2rem] sm:text-5xl font-serif bg-clip-text bg-gradient-to-r from-white to-white"
                         >
                             Сіздерді әкеміз<br/> <span className='font-fancy text-[2.2rem]  text-[#86795f]'> Бұзаубай </span><br/>70 жас мерейтойына <br/> және анамыз <br/> <span className='font-fancy text-[2.2rem]  text-[#86795f]'> Нағима</span><br/> екеуінің отандасқанына 50 жыл болуына арналған салтанатты кешіміздің қадірлі қонағы болуға шақырамыз!
                         </motion.h2>
