@@ -124,7 +124,7 @@ try{
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.2 }}
                         viewport={{ once: true }}
-                        className=" text-center font-fancy p-2 text-4xl sm:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-[#055d64] to-[#055d64]"
+                        className=" text-center font-fancy p-2 text-4xl sm:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-[#86795f] to-[#86795f]"
                     >
                         Той иелері: қызы, ұлдары, және немерелері!
                     </motion.h2>
@@ -141,7 +141,7 @@ try{
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="w-full px-4 py-3 border border-[#055d64]/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#055d64] focus:border-transparent bg-white/50 backdrop-blur-sm"
+              className="w-full px-4 py-3 border border-[#86795f]/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#86795f] focus:border-transparent bg-white/50 backdrop-blur-sm"
               placeholder="Есіміңіз"
               required
             />
@@ -157,7 +157,7 @@ try{
                   value="yes"
                   checked={attendance === 'yes'}
                   onChange={(e) => setAttendance(e.target.value)}
-                  className="h-5 w-5 text-[#055d64] focus:ring-[#055d64] border-[#055d64]"
+                  className="h-5 w-5 text-[#86795f] focus:ring-[#86795f] border-[#86795f]"
                 />
                 <h2 className="p-2 text-[1.1rem] sm:text-4xl font-serif bg-clip-text text-transparent bg-gradient-to-r from-black to-black uppercase">Әрине, келемін</h2>
               </label>
@@ -169,7 +169,7 @@ try{
                   value="no"
                   checked={attendance === 'no'}
                   onChange={(e) => setAttendance(e.target.value)}
-                  className="h-5 w-5 text-[#055d64] focus:ring-[#055d64] border-[#055d64]"
+                  className="h-5 w-5 text-[#86795f] focus:ring-[#86795f] border-[#86795f]"
                 />
                 <h2 className="p-2 text-[1.1rem] sm:text-4xl font-serif bg-clip-text text-transparent bg-gradient-to-r from-black to-black uppercase">Өкінішке орай, келе алмаймын</h2>
               </label>
@@ -180,7 +180,7 @@ try{
           <button
             type="submit"
             disabled={!name || !attendance || loading}
-            className="w-full bg-[#055d64] text-white py-3 px-4 rounded-lg hover:bg-[#044a54] focus:outline-none focus:ring-2 focus:ring-[#055d64] focus:ring-offset-2 transition-colors disabled:opacity-50 disabled:cursor-not-allowed font-medium"
+            className="w-full bg-[#86795f] text-white py-3 px-4 rounded-lg hover:bg-[#044a54] focus:outline-none focus:ring-2 focus:ring-[#86795f] focus:ring-offset-2 transition-colors disabled:opacity-50 disabled:cursor-not-allowed font-medium"
           >
             Жіберу
           </button>
@@ -193,7 +193,7 @@ try{
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.2 }}
                         viewport={{ once: true }}
-                        className="mt-6 font-fancy p-4 px-6 text-center text-[2.5rem] sm:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-[#055d64] to-[#055d64]"
+                        className="mt-6 font-fancy p-4 px-6 text-center text-[2.5rem] sm:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-[#86795f] to-[#86795f]"
                     >
                             Келіңіздер, <br/> тойымыздың қадірлі <br/> қонағы болыңыздар!
                         </motion.div>

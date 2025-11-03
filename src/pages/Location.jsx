@@ -9,7 +9,7 @@ export default function Location() {
     return (<>
         {/* Location section */}
         <section id="location" className="min-h-screen relative overflow-hidden">
-            <img src={palaceP} alt="Description" class="mt-10 w-full max-w-md mx-auto rounded-t-3xl shadow-2xl border-2 border-[#055d64] p-1" />
+            <img src={palaceP} alt="Description" class="mt-10 w-full max-w-md mx-auto rounded-t-3xl shadow-2xl border-2 border-[#86795f] p-1" />
             
             <div className="container mx-auto px-4 relative z-10">
                 {/* Section Header */}
@@ -25,7 +25,7 @@ export default function Location() {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.2 }}
                         viewport={{ once: true }}
-                        className="mt-8 font-fancy p-2 text-4xl sm:text-4xl bg-clip-text text-transparent bg-gradient-to-r from-[#055d64] to-[#055d64]"
+                        className="mt-8 font-fancy p-2 text-4xl sm:text-4xl bg-clip-text text-transparent bg-gradient-to-r from-[#86795f] to-[#86795f]"
                     >
                         Мекен-жайымыз:
                     </motion.span>
@@ -48,9 +48,9 @@ export default function Location() {
                         viewport={{ once: true }}
                         className="flex items-center justify-center gap-4 pt-4"
                     >
-                        <div className="h-[1px] w-12 bg-[#055d64]" />
-                        <MapPin className="w-5 h-5 text-[#055d64]" />
-                        <div className="h-[1px] w-12 bg-[#055d64]" />
+                        <div className="h-[1px] w-12 bg-[#86795f]" />
+                        <MapPin className="w-5 h-5 text-[#86795f]" />
+                        <div className="h-[1px] w-12 bg-[#86795f]" />
                     </motion.div>
                 </motion.div>
 

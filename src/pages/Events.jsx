@@ -44,13 +44,13 @@ export default function Events() {
         <>
             {/* Event Section */}
             <section id="event" className="min-h-screen flex flex-col items-center justify-center   sm:py-20 text-center relative overflow-hidden">
-                        <img src={photo1} alt="Description" class="w-full max-w-md mx-auto rounded-t-3xl shadow-2xl border-2 border-[#055d64] p-1" />
+                        <img src={photo1} alt="Description" class="w-full max-w-md mx-auto rounded-t-3xl shadow-2xl border-2 border-[#86795f] p-1" />
 
                           <motion.h2
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ delay: 0.4 }}
-className="mt-8 font-fancy  text-4xl sm:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-[#055d64] to-[#055d64] "
+className="mt-8 font-fancy  text-4xl sm:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-[#86795f] to-[#86795f] "
 >                            Той салтанаты:
                         </motion.h2>
                         <motion.h2
@@ -96,7 +96,7 @@ className="uppercase mt-4 px-2 text-2xl sm:text-5xl font-light bg-clip-text text
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ delay: 0.4 }}
-className="mt-5 mb-2 font-fancy p-2 text-4xl sm:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-[#055d64] to-[#055d64] "
+className="mt-5 mb-2 font-fancy p-2 text-4xl sm:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-[#86795f] to-[#86795f] "
 >                            Тойға дейін:
                         </motion.h2>
 
@@ -105,40 +105,40 @@ className="mt-5 mb-2 font-fancy p-2 text-4xl sm:text-6xl bg-clip-text text-trans
       <div className="flex justify-center items-baseline gap-2 sm:gap-5">
         {/* Days */}
         <div className="text-center">
-          <div className="text-4xl sm:text-5xl font-bold text-[#055d64] mb-1">
+          <div className="text-4xl sm:text-5xl font-bold text-[#86795f] mb-1">
             {timeLeft.days.toString().padStart(2, '0')}
           </div>
           <div className="text-sm text-black uppercase tracking-wide">күн</div>
         </div>
 
         {/* Colon separator */}
-        <div className="text-2xl sm:text-3xl text-[#055d64] font-bold mb-4">:</div>
+        <div className="text-2xl sm:text-3xl text-[#86795f] font-bold mb-4">:</div>
 
         {/* Hours */}
         <div className="text-center">
-          <div className="text-4xl sm:text-5xl font-bold text-[#055d64] mb-1">
+          <div className="text-4xl sm:text-5xl font-bold text-[#86795f] mb-1">
             {timeLeft.hours.toString().padStart(2, '0')}
           </div>
           <div className="text-sm text-black uppercase tracking-wide">сағат</div>
         </div>
 
         {/* Colon separator */}
-        <div className="text-2xl sm:text-3xl text-[#055d64] font-bold mb-4">:</div>
+        <div className="text-2xl sm:text-3xl text-[#86795f] font-bold mb-4">:</div>
 
         {/* Minutes */}
         <div className="text-center">
-          <div className="text-4xl sm:text-5xl font-bold text-[#055d64] mb-1">
+          <div className="text-4xl sm:text-5xl font-bold text-[#86795f] mb-1">
             {timeLeft.minutes.toString().padStart(2, '0')}
           </div>
           <div className="text-sm text-black uppercase tracking-wide">минут</div>
         </div>
 
         {/* Colon separator */}
-        <div className="text-2xl sm:text-3xl text-[#055d64] font-bold mb-4">:</div>
+        <div className="text-2xl sm:text-3xl text-[#86795f] font-bold mb-4">:</div>
 
         {/* Seconds */}
         <div className="text-center">
-          <div className="text-4xl sm:text-5xl font-bold text-[#055d64] mb-1">
+          <div className="text-4xl sm:text-5xl font-bold text-[#86795f] mb-1">
             {timeLeft.seconds.toString().padStart(2, '0')}
           </div>
           <div className="text-sm text-black uppercase tracking-wide">секунд</div>

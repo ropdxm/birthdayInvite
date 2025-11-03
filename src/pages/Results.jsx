@@ -57,7 +57,7 @@ const Results = () => {
   if (loading) {
     return (
       <div className="p-8 text-center">
-        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#055d64] mx-auto"></div>
+        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#86795f] mx-auto"></div>
         <p className="mt-2 text-gray-600">Loading...</p>
       </div>
     );
@@ -65,7 +65,7 @@ const Results = () => {
 
   return (
     <div className="p-6">
-      <h1 className="text-2xl font-bold text-[#055d64] mb-6">Results: ({rsvps.length})</h1>
+      <h1 className="text-2xl font-bold text-[#86795f] mb-6">Results: ({rsvps.length})</h1>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {rsvps.map((rsvp, index) => (

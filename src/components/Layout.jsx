@@ -167,11 +167,11 @@ const Layout = ({ children }) => {
         >
           {isPlaying ? (
             <div className="relative">
-              <PauseCircle className="w-5 h-5 text-[#055d64]" />
-              <span className="absolute -top-1 -right-1 w-2 h-2 bg-[#055d64] rounded-full animate-pulse" />
+              <PauseCircle className="w-5 h-5 text-[#86795f]" />
+              <span className="absolute -top-1 -right-1 w-2 h-2 bg-[#86795f] rounded-full animate-pulse" />
             </div>
           ) : (
-            <PlayCircle className="w-6 h-6 text-[#055d64]" />
+            <PlayCircle className="w-6 h-6 text-[#86795f]" />
           )}
         </motion.button>
 
